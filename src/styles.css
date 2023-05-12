@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=PT+Sans&family=Raleway:wght@500&family=Rubik:wght@500&family=Ysabeau:wght@600&display=swap");
+body {
+  font-family: "Lora", serif;
+  font-family: "PT Sans", sans-serif;
+  font-family: "Raleway", sans-serif;
+  font-family: "Rubik", sans-serif;
+  font-family: "Ysabeau", sans-serif;
+}
+.large-image {
+  display: block;
+  height: 99vh;
+  width: 99vw;
+}
+
+.medium-image {
+  display: none;
+  height: 99vh;
+  width: 99vw;
+}
+.small-image {
+  display: none;
+  height: 70vh;
+  width: 99vw;
+}
+@media (max-width: 768px) {
+  .large-image {
+    display: none;
+  }
+
+  .medium-image {
+    display: block;
+  }
+}
+
+@media (max-width: 450px) {
+  .large-image {
+    display: none;
+  }
+
+  .medium-image {
+    display: none;
+  }
+
+  .small-image {
+    display: block;
+  }
+}
+/* .card-class.inner-card {
+  background-color: aqua;
+}
+@media (max-width: 768px) {
+  .card-class.inner-card {
+  background-color: aqua;
+}
+} */
+.inner-card {
+  padding-right: 0 !important;
+}
